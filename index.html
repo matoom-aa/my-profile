@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <title>My Profile</title>
+  <style>
+    :root{--ink:#172421;--muted:#67736e;--paper:#f5f2eb;--card:#fffefa;--green:#52796f;--line:#e7e4dc;--accent:#d8a66b}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:inherit}.page{max-width:1060px;margin:auto;padding:28px 24px 64px}.nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:64px}.brand{font-weight:750;letter-spacing:.03em}.nav a{font-size:.92rem;text-decoration:none;color:var(--muted);margin-left:22px}.nav a:hover{color:var(--green)}
+    .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding:12px 0 72px}.eyebrow{color:var(--green);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}.hero h1{font-size:clamp(2.6rem,7vw,5.5rem);line-height:1.05;letter-spacing:-.055em;margin:14px 0 20px}.hero p{font-size:1.08rem;color:var(--muted);max-width:580px;margin:0 0 28px}.button{display:inline-block;text-decoration:none;background:var(--ink);color:white;padding:12px 19px;border-radius:999px;font-weight:650}.button:hover{background:var(--green)}
+    .portrait{min-height:350px;border-radius:180px 180px 24px 24px;background:#d8e1d9;display:grid;place-items:center;position:relative;overflow:hidden}.portrait img{width:100%;height:100%;min-height:350px;position:absolute;inset:0;object-fit:cover;object-position:center 35%}.portrait-note{position:absolute;bottom:18px;background:#fffefaeb;border-radius:999px;padding:7px 14px;font-size:.82rem;color:var(--green);z-index:2}
+    section{padding:44px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.section-head h2{font-size:1.8rem;letter-spacing:-.03em;margin:0}.section-head span{color:var(--muted);font-size:.9rem}.about{display:grid;grid-template-columns:1fr 1fr;gap:32px}.about p{color:var(--muted);margin:0}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}.fact b{display:block;font-size:.82rem;color:var(--green);margin-bottom:4px}.fact span{font-weight:600}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:21px;min-height:170px}.card .number{color:var(--accent);font-weight:800;font-size:.82rem}.card h3{margin:14px 0 7px;font-size:1.08rem}.card p{color:var(--muted);font-size:.94rem;margin:0}.contact{background:var(--ink);color:#f9f7f1;border-radius:24px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:24px}.contact h2{font-size:1.6rem;margin:0 0 5px}.contact p{margin:0;color:#c4cec9}.contact a{white-space:nowrap;background:#f9f7f1;color:var(--ink);padding:11px 17px;border-radius:999px;text-decoration:none;font-weight:700}.footer{padding-top:30px;text-align:center;color:var(--muted);font-size:.84rem}
+    @media(max-width:720px){.page{padding:20px 18px 42px}.nav{margin-bottom:35px}.nav a{margin-left:12px}.hero{grid-template-columns:1fr;gap:30px;padding-bottom:48px}.portrait{min-height:280px;max-width:440px;width:100%;margin:auto}.about{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.card{min-height:auto}.contact{align-items:flex-start;flex-direction:column}.section-head{align-items:flex-start;flex-direction:column;gap:4px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="brand">MY SPACE</div>
+      <div><a href="#about">About</a><a href="#interests">Interests</a><a href="#contact">Contact</a></div>
+    </nav>
+    <header class="hero">
+      <div>
+        <div class="eyebrow">NICE TO MEET YOU</div>
+        <h1>Hello,<br>I’m Phutisit Phantaweerat</h1>
+        <p>A little space to introduce myself, share what I’m interested in, and show what I’m working on. It’s nice to meet you.</p>
+        <a class="button" href="#about">MORE ABOUT ME <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="portrait"><img src="profile-photo.png" alt="Phutisit Phantaweerat"><div class="portrait-note">Phutisit Phantaweerat</div></div>
+    </header>
+    <section id="about">
+      <div class="section-head"><h2>About Me</h2><span>A little about who I am and what I do</span></div>
+      <div class="about">
+        <p>I enjoy learning and trying new things. I’m interested in physics and music, and spend my free time playing video games and musical instruments.</p>
+        <div class="facts"><div class="fact"><b>📍 Based in</b><span>Thailand</span></div><div class="fact"><b>✨ Interests</b><span>Physics and music</span></div><div class="fact"><b>☕ In my free time</b><span>Video games and playing musical instruments</span></div><div class="fact"><b>🎯 Current goal</b><span>To become a versatile engineering manager</span></div></div>
+      </div>
+    </section>
+    <section id="interests">
+      <div class="section-head"><h2>Things I Enjoy</h2><span>A few things that make me who I am</span></div>
+      <div class="cards">
+        <article class="card"><div class="number">01 / EXPLORE</div><h3>Video games</h3><p>A favorite way to relax and have fun.</p></article>
+        <article class="card"><div class="number">02 / LEARN</div><h3>Physics and music</h3><p>Two subjects I’m always curious to explore.</p></article>
+        <article class="card"><div class="number">03 / CREATE</div><h3>Playing musical instruments</h3><p>Music is one of the ways I enjoy being creative.</p></article>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact"><div><h2>Let’s Connect</h2><p>Feel free to reach out by email.</p></div><a href="mailto:phuttisit.p@gmail.com">phuttisit.p@gmail.com ↗</a></div>
+      <div class="footer">Made with care · © <span id="year"></span> Phutisit Phantaweerat</div>
+    </section>
+  </main>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
+
+
+
